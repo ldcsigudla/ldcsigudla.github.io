@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Redirecting…</title>
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="refresh" content="0; url=/" />
+    <script>
+      // Preserve path/query/hash when redirecting to SPA entry
+      (function() {
+        var l = window.location;
+        var redirect = l.origin + '/' + '?' + l.pathname.slice(1) + l.search + l.hash;
+        l.replace(redirect);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Redirecting…</p>
+  </body>
+</html>
