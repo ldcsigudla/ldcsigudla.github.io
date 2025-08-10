@@ -18,7 +18,7 @@ export const Hero = () => {
           Lungelo Sigudla
         </h1>
         <p className="mt-4 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-          Pioneering innovation in electrical, electronic, and computer engineering. 14+ years of award-winning research excellence.
+          Building energy systems and RF solutions since 2009. From science fair winner to startup founder.
         </p>
 
         <div className="mt-8 flex items-center justify-center gap-3">
