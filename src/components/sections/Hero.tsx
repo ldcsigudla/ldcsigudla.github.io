@@ -13,12 +13,12 @@ export const Hero = () => {
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/10 to-background/90" aria-hidden />
 
       <div className="container mx-auto px-6 py-24 md:py-32 text-center">
-        <p className="text-sm uppercase tracking-widest text-muted-foreground">Personal Website</p>
+        <p className="text-sm uppercase tracking-widest text-muted-foreground">Electrical & Electronic Engineer</p>
         <h1 className="mt-3 text-4xl md:text-6xl font-bold font-display">
-          Lungelo Sigudla — Personal Website
+          Lungelo Sigudla
         </h1>
         <p className="mt-4 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-          A simple, beautiful hub for my portfolio, experience, skills, and contact info.
+          Pioneering innovation in electrical, electronic, and computer engineering. 14+ years of award-winning research excellence.
         </p>
 
         <div className="mt-8 flex items-center justify-center gap-3">
