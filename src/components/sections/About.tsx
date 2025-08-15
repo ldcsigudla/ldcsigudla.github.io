@@ -1,9 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-
 export const About = () => {
-  return (
-    <section id="about" className="py-20 bg-gradient-hero bg-animate">
+  return <section id="about" className="py-20 bg-gradient-hero bg-animate">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold font-display mb-6 text-gradient hover-lift">
@@ -17,7 +15,7 @@ export const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <Card className="p-8 glass-card border-l-4 border-l-primary hover-float shadow-medium">
-              <h3 className="text-2xl font-bold mb-4 text-primary">The Science Fair Kid</h3>
+              <h3 className="text-2xl font-bold mb-4 text-primary">The Science Fair days</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Started winning science fair medals in Grade 4 and never stopped. By high school, 
                 I became the first student from my school to compete internationally at Intel science 
@@ -111,8 +109,6 @@ export const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
