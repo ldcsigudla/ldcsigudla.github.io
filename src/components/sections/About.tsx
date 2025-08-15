@@ -15,7 +15,7 @@ export const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <Card className="p-8 glass-card border-l-4 border-l-primary hover-float shadow-medium">
-              <h3 className="text-2xl font-bold mb-4 text-primary">The Science Fair days</h3>
+              <h3 className="text-2xl font-bold mb-4 text-primary">The Science Fairs</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Started winning science fair medals in Grade 4 and never stopped. By high school, 
                 I became the first student from my school to compete internationally at Intel science 
