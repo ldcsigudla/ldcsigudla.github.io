@@ -76,13 +76,13 @@ const achievements = [
 
 export const Skills = () => {
   return (
-    <section id="skills" className="py-20 bg-gradient-to-b from-background to-secondary/20">
+    <section id="skills" className="py-20 bg-gradient-hero bg-animate">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold font-display mb-4">
+          <h2 className="text-4xl md:text-6xl font-bold font-display mb-6 text-gradient hover-lift">
             Technical Expertise
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Comprehensive skill set spanning electrical, electronic, and computer engineering disciplines
           </p>
         </div>
@@ -91,11 +91,11 @@ export const Skills = () => {
           {skillCategories.map((category, index) => {
             const IconComponent = category.icon;
             return (
-              <Card key={index} className="glass-card">
+              <Card key={index} className="glass-card hover-float shadow-medium">
                 <CardHeader>
                   <div className="flex items-center gap-3">
-                    <div className="p-2 bg-primary/10 rounded-lg">
-                      <IconComponent className="h-6 w-6 text-primary" />
+                    <div className="p-3 bg-gradient-button rounded-lg shadow-soft">
+                      <IconComponent className="h-6 w-6 text-primary-foreground" />
                     </div>
                     <div>
                       <CardTitle className="text-xl">{category.title}</CardTitle>
@@ -104,14 +104,14 @@ export const Skills = () => {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <div className="space-y-4">
+                  <div className="space-y-6">
                     {category.skills.map((skill, skillIndex) => (
                       <div key={skillIndex}>
-                        <div className="flex justify-between items-center mb-2">
+                        <div className="flex justify-between items-center mb-3">
                           <span className="text-sm font-medium">{skill.name}</span>
-                          <span className="text-sm text-muted-foreground">{skill.level}%</span>
+                          <span className="text-sm text-primary font-semibold">{skill.level}%</span>
                         </div>
-                        <Progress value={skill.level} className="h-2" />
+                        <Progress value={skill.level} className="h-3 hover-glow" />
                       </div>
                     ))}
                   </div>
@@ -122,11 +122,11 @@ export const Skills = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
-          <Card className="glass-card">
+          <Card className="glass-card hover-float shadow-medium">
             <CardHeader>
               <div className="flex items-center gap-3">
-                <div className="p-2 bg-primary/10 rounded-lg">
-                  <BookOpen className="h-6 w-6 text-primary" />
+                <div className="p-3 bg-gradient-button rounded-lg shadow-soft">
+                  <BookOpen className="h-6 w-6 text-primary-foreground" />
                 </div>
                 <div>
                   <CardTitle>Education & Certifications</CardTitle>
@@ -137,23 +137,23 @@ export const Skills = () => {
             <CardContent>
               <div className="space-y-4">
                 {certifications.map((cert, index) => (
-                  <div key={index} className="flex items-center justify-between p-3 bg-secondary/20 rounded-lg">
+                  <div key={index} className="flex items-center justify-between p-4 bg-gradient-card rounded-lg hover-lift shadow-soft">
                     <div>
                       <p className="font-medium">{cert.name}</p>
                       <p className="text-sm text-muted-foreground">{cert.type}</p>
                     </div>
-                    <Badge variant="outline">{cert.year}</Badge>
+                    <Badge variant="outline" className="bg-primary/10">{cert.year}</Badge>
                   </div>
                 ))}
               </div>
             </CardContent>
           </Card>
 
-          <Card className="glass-card">
+          <Card className="glass-card hover-float shadow-medium">
             <CardHeader>
               <div className="flex items-center gap-3">
-                <div className="p-2 bg-primary/10 rounded-lg">
-                  <Award className="h-6 w-6 text-primary" />
+                <div className="p-3 bg-gradient-accent rounded-lg shadow-soft">
+                  <Award className="h-6 w-6 text-accent-foreground" />
                 </div>
                 <div>
                   <CardTitle>Key Achievements</CardTitle>
@@ -162,11 +162,11 @@ export const Skills = () => {
               </div>
             </CardHeader>
             <CardContent>
-              <div className="space-y-3">
+              <div className="space-y-4">
                 {achievements.map((achievement, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                    <p className="text-sm">{achievement}</p>
+                  <div key={index} className="flex items-start gap-3 hover-lift p-2 rounded-lg transition-smooth">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0 shadow-glow" />
+                    <p className="text-sm leading-relaxed">{achievement}</p>
                   </div>
                 ))}
               </div>

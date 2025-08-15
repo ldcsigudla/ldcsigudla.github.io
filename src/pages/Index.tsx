@@ -27,17 +27,17 @@ const Index = () => {
       <Skills />
       <Projects />
       
-      <section id="contact" className="py-20 bg-gradient-to-br from-primary/10 via-accent/5 to-secondary/10">
+      <section id="contact" className="py-20 bg-brand-gradient bg-animate">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold font-display mb-6">Want to Chat?</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
+          <h2 className="text-4xl md:text-6xl font-bold font-display mb-8 text-white hover-lift">Want to Chat?</h2>
+          <p className="text-lg text-white/90 max-w-3xl mx-auto mb-12 leading-relaxed">
             Always up for discussing engineering projects, startup ideas, or just geeking out about RF systems. 
             Drop me a line if you're working on something interesting.
           </p>
-          <div className="flex justify-center gap-4 flex-wrap">
+          <div className="flex justify-center gap-6 flex-wrap">
             <a 
               href="mailto:sigudlalungelo@gmail.com" 
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground px-8 py-4 rounded-lg hover:from-primary/90 hover:to-primary/70 transition-all shadow-elegant transform hover:scale-105"
+              className="inline-flex items-center gap-3 glass-button text-white px-10 py-5 rounded-xl hover-glow hover-lift shadow-large font-semibold transition-spring"
             >
               <Mail className="w-5 h-5" />
               Email Me
@@ -46,13 +46,13 @@ const Index = () => {
               href="https://www.linkedin.com/in/lungelosigudla/" 
               target="_blank" 
               rel="noreferrer"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-accent to-accent/80 text-accent-foreground px-8 py-4 rounded-lg hover:from-accent/90 hover:to-accent/70 transition-all transform hover:scale-105"
+              className="inline-flex items-center gap-3 bg-white/20 text-white px-10 py-5 rounded-xl hover:bg-white/30 transition-spring hover-lift shadow-large font-semibold backdrop-blur-sm"
             >
               <Linkedin className="w-5 h-5" />
               LinkedIn
             </a>
           </div>
-          <p className="text-sm text-muted-foreground mt-6">
+          <p className="text-sm text-white/70 mt-8 font-medium">
             Currently open to engineering roles, consulting opportunities, and research collaborations
           </p>
         </div>

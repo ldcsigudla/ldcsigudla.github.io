@@ -3,20 +3,20 @@ import { Card } from "@/components/ui/card";
 
 export const About = () => {
   return (
-    <section id="about" className="py-20 bg-gradient-to-b from-background to-secondary/20">
+    <section id="about" className="py-20 bg-gradient-hero bg-animate">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold font-display mb-4">
+          <h2 className="text-4xl md:text-6xl font-bold font-display mb-6 text-gradient hover-lift">
             Building Things Since 2009
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Electrical, electronic, and computer engineering specialist with a passion for energy systems and RF design
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <Card className="p-8 glass-card border-l-4 border-l-primary">
+          <div className="space-y-8">
+            <Card className="p-8 glass-card border-l-4 border-l-primary hover-float shadow-medium">
               <h3 className="text-2xl font-bold mb-4 text-primary">The Science Fair Kid</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Started winning science fair medals in Grade 4 and never stopped. By high school, 
@@ -30,7 +30,7 @@ export const About = () => {
               </p>
             </Card>
 
-            <Card className="p-8 glass-card border-l-4 border-l-accent">
+            <Card className="p-8 glass-card border-l-4 border-l-accent hover-float shadow-medium">
               <h3 className="text-2xl font-bold mb-4 text-primary">What I Actually Do</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 I work at the intersection of electrical, electronic, and computer engineering. 
@@ -44,7 +44,7 @@ export const About = () => {
               </p>
             </Card>
 
-            <Card className="p-8 glass-card border-l-4 border-l-secondary">
+            <Card className="p-8 glass-card border-l-4 border-l-secondary hover-float shadow-medium">
               <h3 className="text-2xl font-bold mb-4 text-primary">Random Personal Stuff</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Big fan of Robert Greene's "Mastery" - it perfectly captures the journey from 
@@ -58,22 +58,22 @@ export const About = () => {
             </Card>
           </div>
 
-          <div className="space-y-6">
-            <Card className="p-8 glass-card border-l-4 border-l-primary">
+          <div className="space-y-8">
+            <Card className="p-8 glass-card border-l-4 border-l-primary hover-float shadow-medium">
               <h3 className="text-2xl font-bold mb-4 text-primary">Technical Arsenal</h3>
               <div className="grid grid-cols-2 gap-3 mb-6">
-                <Badge variant="secondary">RF Engineering</Badge>
-                <Badge variant="secondary">Antenna Design</Badge>
-                <Badge variant="secondary">Power Systems</Badge>
-                <Badge variant="secondary">Electromagnetics</Badge>
-                <Badge variant="secondary">Digital Electronics</Badge>
-                <Badge variant="secondary">Energy Conversion</Badge>
-                <Badge variant="secondary">CST Studio Suite</Badge>
-                <Badge variant="secondary">Microwave Design</Badge>
-                <Badge variant="secondary">Python</Badge>
-                <Badge variant="secondary">C++</Badge>
-                <Badge variant="secondary">MATLAB</Badge>
-                <Badge variant="secondary">Circuit Design</Badge>
+                <Badge variant="secondary" className="hover-lift">RF Engineering</Badge>
+                <Badge variant="secondary" className="hover-lift">Antenna Design</Badge>
+                <Badge variant="secondary" className="hover-lift">Power Systems</Badge>
+                <Badge variant="secondary" className="hover-lift">Electromagnetics</Badge>
+                <Badge variant="secondary" className="hover-lift">Digital Electronics</Badge>
+                <Badge variant="secondary" className="hover-lift">Energy Conversion</Badge>
+                <Badge variant="secondary" className="hover-lift">CST Studio Suite</Badge>
+                <Badge variant="secondary" className="hover-lift">Microwave Design</Badge>
+                <Badge variant="secondary" className="hover-lift">Python</Badge>
+                <Badge variant="secondary" className="hover-lift">C++</Badge>
+                <Badge variant="secondary" className="hover-lift">MATLAB</Badge>
+                <Badge variant="secondary" className="hover-lift">Circuit Design</Badge>
               </div>
               <p className="text-muted-foreground leading-relaxed">
                 Proficient in electromagnetic simulation using CST Studio Suite, custom antenna 
@@ -82,7 +82,7 @@ export const About = () => {
               </p>
             </Card>
 
-            <Card className="p-8 glass-card border-l-4 border-l-accent">
+            <Card className="p-8 glass-card border-l-4 border-l-accent hover-float shadow-medium">
               <h3 className="text-2xl font-bold mb-4 text-primary">14 Years of Building</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 From sustainable water-flow generators to wireless power transfer systems, 
@@ -96,7 +96,7 @@ export const About = () => {
               </p>
             </Card>
 
-            <Card className="p-8 glass-card border-l-4 border-l-secondary">
+            <Card className="p-8 glass-card border-l-4 border-l-secondary hover-float shadow-medium">
               <h3 className="text-2xl font-bold mb-4 text-primary">The Bigger Picture</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Started a tech startup in digital microelectronics and RF engineering, working 

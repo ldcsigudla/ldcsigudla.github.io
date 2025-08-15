@@ -79,13 +79,13 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <section id="projects" className="py-20 bg-gradient-to-b from-secondary/20 to-background">
+    <section id="projects" className="py-20 bg-gradient-hero bg-animate">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold font-display mb-4">
+          <h2 className="text-4xl md:text-6xl font-bold font-display mb-6 text-gradient hover-lift">
             Engineering Innovation Portfolio
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             14+ years of award-winning research and development in electrical, electronic, and energy engineering
           </p>
         </div>
@@ -94,19 +94,19 @@ export const Projects = () => {
           {projects.map((project, index) => {
             const IconComponent = project.icon;
             return (
-              <Card key={index} className="glass-card hover:shadow-elegant transition-all duration-300">
+              <Card key={index} className="glass-card hover-glow hover-float shadow-medium transition-spring">
                 <CardHeader className="pb-4">
                   <div className="flex items-start justify-between">
                     <div className="flex items-center gap-4">
-                      <div className="p-3 bg-primary/10 rounded-lg">
-                        <IconComponent className="h-6 w-6 text-primary" />
+                      <div className="p-3 bg-gradient-button rounded-lg shadow-soft">
+                        <IconComponent className="h-6 w-6 text-primary-foreground" />
                       </div>
                       <div>
-                        <CardTitle className="text-xl mb-2">{project.title}</CardTitle>
+                        <CardTitle className="text-2xl mb-2 hover:text-primary transition-smooth">{project.title}</CardTitle>
                         <div className="flex items-center gap-2 text-sm text-muted-foreground">
                           <CalendarDays className="h-4 w-4" />
                           {project.year}
-                          <Award className="h-4 w-4 ml-2" />
+                          <Award className="h-4 w-4 ml-2 text-accent" />
                           Award Winner
                         </div>
                       </div>
@@ -114,21 +114,21 @@ export const Projects = () => {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-base leading-relaxed mb-4">
+                  <CardDescription className="text-base leading-relaxed mb-6 text-foreground/80">
                     {project.description}
                   </CardDescription>
                   
-                  <div className="mb-4">
-                    <div className="flex items-center gap-2 mb-2">
+                  <div className="mb-6">
+                    <div className="flex items-center gap-2 mb-3">
                       <Zap className="h-4 w-4 text-primary" />
-                      <span className="font-medium text-sm">Key Innovation:</span>
+                      <span className="font-semibold text-sm">Key Innovation:</span>
                     </div>
-                    <p className="text-sm text-primary font-medium">{project.highlight}</p>
+                    <p className="text-sm text-primary font-medium bg-primary/10 p-3 rounded-lg">{project.highlight}</p>
                   </div>
 
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, techIndex) => (
-                      <Badge key={techIndex} variant="outline" className="text-xs">
+                      <Badge key={techIndex} variant="outline" className="text-xs hover-lift bg-secondary/50">
                         {tech}
                       </Badge>
                     ))}
