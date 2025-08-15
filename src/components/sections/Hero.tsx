@@ -1,27 +1,23 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
-
 export const Hero = () => {
-  return (
-    <header className="relative overflow-hidden min-h-screen flex items-center">
-      <div
-        className="absolute inset-0 -z-10 bg-center bg-cover"
-        style={{ backgroundImage: `url(${heroImage})` }}
-        aria-hidden
-      />
+  return <header className="relative overflow-hidden min-h-screen flex items-center">
+      <div className="absolute inset-0 -z-10 bg-center bg-cover" style={{
+      backgroundImage: `url(${heroImage})`
+    }} aria-hidden />
       <div className="absolute inset-0 -z-10 bg-gradient-hero bg-animate" aria-hidden />
 
       <div className="container mx-auto px-6 py-24 md:py-32 text-center">
         <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4 hover-float">
           Electrical & Electronic Engineer
         </p>
-        <h1 className="mt-3 text-5xl md:text-7xl font-bold font-display text-gradient mb-6 hover-lift">
+        <h1 className="mt-3 text-5xl md:text-7xl font-bold font-display text-gradient mb-6 hover-lift text-gray-400">
           Lungelo Sigudla
         </h1>
-        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed">
-          Building energy systems and RF solutions since 2009. From science fair winner to startup founder.
-        </p>
+        <p className="text-lg max-w-2xl mx-auto mb-12 leading-relaxed md:text-xl text-slate-100">Building energy systems and RF solutions since 2009.     
+
+From science fairs to startup founder.</p>
 
         <div className="mt-8 flex items-center justify-center gap-4 flex-wrap">
           <a href="#contact" aria-label="Contact">
@@ -41,8 +37,6 @@ export const Hero = () => {
           </a>
         </div>
       </div>
-    </header>
-  );
+    </header>;
 };
-
 export default Hero;
