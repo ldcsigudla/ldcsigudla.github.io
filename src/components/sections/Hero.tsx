@@ -12,7 +12,7 @@ export const Hero = () => {
         <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4 hover-float">
           Electrical & Electronic Engineer
         </p>
-        <h1 className="mt-3 text-5xl md:text-7xl font-bold font-display text-gradient mb-6 hover-lift text-gray-400">
+        <h1 className="mt-3 text-5xl md:text-7xl font-bold font-display text-white mb-6 hover-lift drop-shadow-lg">
           Lungelo Sigudla
         </h1>
         <p className="text-lg max-w-2xl mx-auto mb-12 leading-relaxed md:text-xl text-slate-100">Building energy systems and RF solutions since 2009.     
