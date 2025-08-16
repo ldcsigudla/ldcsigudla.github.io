@@ -4,7 +4,7 @@ export const About = () => {
   return <section id="about" className="py-20 bg-gradient-hero bg-animate">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-6xl font-bold font-display mb-6 text-white hover-lift">
+        <h2 className="text-4xl md:text-6xl font-bold font-display mb-6 text-primary hover-lift">
           Building Things Since 2009
         </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
