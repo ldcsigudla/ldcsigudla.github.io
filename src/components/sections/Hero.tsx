@@ -9,13 +9,13 @@ export const Hero = () => {
       <div className="absolute inset-0 -z-10 bg-gradient-hero bg-animate" aria-hidden />
 
       <div className="container mx-auto px-6 py-24 md:py-32 text-center">
-        <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4 hover-float">
+        <p className="text-sm uppercase tracking-widest text-white/80 mb-4 hover-float drop-shadow-md">
           Electrical & Electronic Engineer
         </p>
         <h1 className="mt-3 text-5xl md:text-7xl font-bold font-display text-white mb-6 hover-lift drop-shadow-lg">
           Lungelo Sigudla
         </h1>
-        <p className="text-lg max-w-2xl mx-auto mb-12 leading-relaxed md:text-xl text-slate-100">Building energy systems and RF solutions since 2009.     
+        <p className="text-lg max-w-2xl mx-auto mb-12 leading-relaxed md:text-xl text-white/90 drop-shadow-md">Building energy systems and RF solutions since 2009.     
 
 From science fairs to startup founder.</p>
 
