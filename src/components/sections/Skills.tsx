@@ -2,59 +2,63 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
 import { 
-  Cpu, 
+  Lightbulb, 
   Zap, 
-  Radio, 
-  Settings, 
+  Satellite, 
+  Wrench, 
   Code, 
   BookOpen,
   Award,
-  Users
+  Users,
+  Atom,
+  Orbit,
+  Waves,
+  Battery
 } from "lucide-react";
 
 const skillCategories = [
   {
     title: "Electrical & Electronic Engineering",
-    icon: Zap,
+    icon: Battery,
     description: "Core competencies in power systems, digital electronics, and circuit design",
     skills: [
-      { name: "Power Electronics", level: 95 },
-      { name: "Digital Circuit Design", level: 90 },
-      { name: "Electromagnetic Theory", level: 92 },
-      { name: "Energy Conversion Systems", level: 88 }
+      { name: "Power Electronics", size: "large" },
+      { name: "Digital Circuit Design", size: "medium" },
+      { name: "Electromagnetic Theory", size: "large" },
+      { name: "Energy Conversion Systems", size: "medium" }
     ]
   },
   {
     title: "RF & Antenna Engineering", 
-    icon: Radio,
+    icon: Satellite,
     description: "Advanced expertise in radio frequency design and electromagnetic simulation",
     skills: [
-      { name: "Antenna Design & Optimization", level: 94 },
-      { name: "CST Studio Suite", level: 91 },
-      { name: "Microwave Engineering", level: 87 },
-      { name: "EIRP Optimization", level: 89 }
+      { name: "Antenna Design & Optimization", size: "large" },
+      { name: "CST Studio Suite", size: "medium" },
+      { name: "Microwave Engineering", size: "medium" },
+      { name: "EIRP Optimization", size: "small" }
     ]
   },
   {
     title: "Computer Engineering",
-    icon: Cpu, 
+    icon: Code, 
     description: "Programming and computational methods for engineering applications",
     skills: [
-      { name: "C++ Programming", level: 85 },
-      { name: "Python Programming", level: 83 },
-      { name: "Digital Signal Processing", level: 86 },
-      { name: "Embedded Systems", level: 82 }
+      { name: "C++ Programming", size: "medium" },
+      { name: "Python Programming", size: "medium" },
+      { name: "Digital Signal Processing", size: "medium" },
+      { name: "Embedded Systems", size: "small" }
     ]
   },
   {
     title: "Research & Development",
-    icon: Settings,
+    icon: Lightbulb,
     description: "Systematic approach to innovation and problem-solving",
     skills: [
-      { name: "Experimental Design", level: 93 },
-      { name: "Data Analysis", level: 88 },
-      { name: "Technical Documentation", level: 90 },
-      { name: "Patent Research", level: 85 }
+      { name: "Experimental Design", size: "large" },
+      { name: "Data Analysis", size: "medium" },
+      { name: "Technical Documentation", size: "medium" },
+      { name: "Patent Research", size: "small" }
     ]
   }
 ];
@@ -91,7 +95,7 @@ export const Skills = () => {
           {skillCategories.map((category, index) => {
             const IconComponent = category.icon;
             return (
-              <Card key={index} className="glass-card hover-float shadow-medium">
+              <Card key={index} className="glass-card hover-float shadow-medium border-0 bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-lg rounded-2xl">
                 <CardHeader>
                   <div className="flex items-center gap-3">
                     <div className="p-3 bg-gradient-button rounded-lg shadow-soft">
@@ -104,16 +108,44 @@ export const Skills = () => {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <div className="space-y-6">
-                    {category.skills.map((skill, skillIndex) => (
-                      <div key={skillIndex}>
-                        <div className="flex justify-between items-center mb-3">
-                          <span className="text-sm font-medium">{skill.name}</span>
-                          <span className="text-sm text-primary font-semibold">{skill.level}%</span>
-                        </div>
-                        <Progress value={skill.level} className="h-3 hover-glow" />
-                      </div>
-                    ))}
+                  <div className="relative h-48 overflow-hidden">
+                    <div className="absolute inset-0 flex flex-wrap items-center justify-center gap-4 p-4">
+                      {category.skills.map((skill, skillIndex) => {
+                        const sizeClasses = {
+                          small: "w-16 h-16 text-xs",
+                          medium: "w-20 h-20 text-sm", 
+                          large: "w-24 h-24 text-sm"
+                        };
+                        const positions = [
+                          "animate-pulse hover:scale-110",
+                          "animate-pulse hover:scale-110 animation-delay-500",
+                          "animate-pulse hover:scale-110 animation-delay-1000",
+                          "animate-pulse hover:scale-110 animation-delay-1500"
+                        ];
+                        return (
+                          <div
+                            key={skillIndex}
+                            className={`
+                              ${sizeClasses[skill.size as keyof typeof sizeClasses]}
+                              bg-gradient-to-br from-primary/30 to-accent/30 
+                              backdrop-blur-sm border border-primary/20
+                              rounded-full flex items-center justify-center
+                              transition-all duration-500 cursor-pointer
+                              hover:from-primary/50 hover:to-accent/50
+                              hover:border-primary/40 hover:shadow-lg
+                              ${positions[skillIndex % positions.length]}
+                            `}
+                            style={{
+                              boxShadow: `0 0 20px ${skillIndex % 2 === 0 ? 'hsl(var(--primary))' : 'hsl(var(--accent))'}/20`
+                            }}
+                          >
+                            <span className="text-center font-medium leading-tight px-2">
+                              {skill.name}
+                            </span>
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -122,7 +154,7 @@ export const Skills = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
-          <Card className="glass-card hover-float shadow-medium">
+          <Card className="glass-card hover-float shadow-medium border-0 bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-lg rounded-2xl">
             <CardHeader>
               <div className="flex items-center gap-3">
                 <div className="p-3 bg-gradient-button rounded-lg shadow-soft">
@@ -137,19 +169,19 @@ export const Skills = () => {
             <CardContent>
               <div className="space-y-4">
                 {certifications.map((cert, index) => (
-                  <div key={index} className="flex items-center justify-between p-4 bg-gradient-card rounded-lg hover-lift shadow-soft">
+                  <div key={index} className="flex items-center justify-between p-4 bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl hover-lift shadow-soft border border-primary/10">
                     <div>
                       <p className="font-medium">{cert.name}</p>
                       <p className="text-sm text-muted-foreground">{cert.type}</p>
                     </div>
-                    <Badge variant="outline" className="bg-primary/10">{cert.year}</Badge>
+                    <Badge variant="outline" className="bg-primary/10 border-primary/30 rounded-full">{cert.year}</Badge>
                   </div>
                 ))}
               </div>
             </CardContent>
           </Card>
 
-          <Card className="glass-card hover-float shadow-medium">
+          <Card className="glass-card hover-float shadow-medium border-0 bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-lg rounded-2xl">
             <CardHeader>
               <div className="flex items-center gap-3">
                 <div className="p-3 bg-gradient-accent rounded-lg shadow-soft">
@@ -164,8 +196,8 @@ export const Skills = () => {
             <CardContent>
               <div className="space-y-4">
                 {achievements.map((achievement, index) => (
-                  <div key={index} className="flex items-start gap-3 hover-lift p-2 rounded-lg transition-smooth">
-                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0 shadow-glow" />
+                  <div key={index} className="flex items-start gap-3 hover-lift p-3 rounded-2xl transition-smooth bg-gradient-to-r from-accent/5 to-primary/5">
+                    <div className="w-3 h-3 bg-gradient-to-r from-primary to-accent rounded-full mt-2 flex-shrink-0 shadow-glow animate-pulse" />
                     <p className="text-sm leading-relaxed">{achievement}</p>
                   </div>
                 ))}

@@ -14,7 +14,7 @@ export const About = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <Card className="p-8 glass-card border-l-4 border-l-primary hover-float shadow-medium">
+            <Card className="p-8 glass-card border-0 hover-float shadow-medium bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-lg rounded-2xl">
               <h3 className="text-2xl font-bold mb-4 text-primary">The Science Fairs</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Started winning science fair medals in Grade 4 and never stopped. By high school, 
@@ -28,7 +28,7 @@ export const About = () => {
               </p>
             </Card>
 
-            <Card className="p-8 glass-card border-l-4 border-l-accent hover-float shadow-medium">
+            <Card className="p-8 glass-card border-0 hover-float shadow-medium bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-lg rounded-2xl">
               <h3 className="text-2xl font-bold mb-4 text-primary">What I Actually Do</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 I work at the intersection of electrical, electronic, and computer engineering. 
@@ -42,7 +42,7 @@ export const About = () => {
               </p>
             </Card>
 
-            <Card className="p-8 glass-card border-l-4 border-l-secondary hover-float shadow-medium">
+            <Card className="p-8 glass-card border-0 hover-float shadow-medium bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-lg rounded-2xl">
               <h3 className="text-2xl font-bold mb-4 text-primary">Random Personal Stuff</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Big fan of Robert Greene's "Mastery" - it perfectly captures the journey from 
@@ -57,30 +57,108 @@ export const About = () => {
           </div>
 
           <div className="space-y-8">
-            <Card className="p-8 glass-card border-l-4 border-l-primary hover-float shadow-medium">
+            <Card className="p-8 glass-card border-0 hover-float shadow-medium bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-lg">
               <h3 className="text-2xl font-bold mb-4 text-primary">Technical Arsenal</h3>
-              <div className="grid grid-cols-2 gap-3 mb-6">
-                <Badge variant="secondary" className="hover-lift">RF Engineering</Badge>
-                <Badge variant="secondary" className="hover-lift">Antenna Design</Badge>
-                <Badge variant="secondary" className="hover-lift">Power Systems</Badge>
-                <Badge variant="secondary" className="hover-lift">Electromagnetics</Badge>
-                <Badge variant="secondary" className="hover-lift">Digital Electronics</Badge>
-                <Badge variant="secondary" className="hover-lift">Energy Conversion</Badge>
-                <Badge variant="secondary" className="hover-lift">CST Studio Suite</Badge>
-                <Badge variant="secondary" className="hover-lift">Microwave Design</Badge>
-                <Badge variant="secondary" className="hover-lift">Python</Badge>
-                <Badge variant="secondary" className="hover-lift">C++</Badge>
-                <Badge variant="secondary" className="hover-lift">MATLAB</Badge>
-                <Badge variant="secondary" className="hover-lift">Circuit Design</Badge>
+              <div className="relative h-64 overflow-hidden rounded-lg">
+                <div className="absolute inset-0">
+                  {/* Main tech skills constellation */}
+                  <div className="absolute top-4 left-8">
+                    <div className="relative">
+                      <div className="px-4 py-2 bg-primary/20 rounded-full border border-primary/30 text-sm font-medium hover:bg-primary/30 transition-all cursor-pointer">
+                        RF Engineering
+                      </div>
+                      <div className="absolute -right-16 top-8">
+                        <div className="px-3 py-1 bg-accent/20 rounded-full border border-accent/30 text-xs font-medium hover:bg-accent/30 transition-all cursor-pointer">
+                          Antenna Design
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="absolute top-12 right-12">
+                    <div className="relative">
+                      <div className="px-4 py-2 bg-secondary/20 rounded-full border border-secondary/30 text-sm font-medium hover:bg-secondary/30 transition-all cursor-pointer">
+                        Power Systems
+                      </div>
+                      <div className="absolute -left-20 top-8">
+                        <div className="px-3 py-1 bg-primary/15 rounded-full border border-primary/25 text-xs font-medium hover:bg-primary/25 transition-all cursor-pointer">
+                          Electromagnetics
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="absolute bottom-20 left-4">
+                    <div className="relative">
+                      <div className="px-4 py-2 bg-accent/20 rounded-full border border-accent/30 text-sm font-medium hover:bg-accent/30 transition-all cursor-pointer">
+                        Digital Electronics
+                      </div>
+                      <div className="absolute -right-12 -top-6">
+                        <div className="px-3 py-1 bg-secondary/15 rounded-full border border-secondary/25 text-xs font-medium hover:bg-secondary/25 transition-all cursor-pointer">
+                          Energy Conversion
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="absolute bottom-8 right-8">
+                    <div className="relative">
+                      <div className="px-4 py-2 bg-primary/25 rounded-full border border-primary/35 text-sm font-medium hover:bg-primary/35 transition-all cursor-pointer">
+                        CST Studio Suite
+                      </div>
+                      <div className="absolute -left-16 -top-8">
+                        <div className="px-3 py-1 bg-accent/15 rounded-full border border-accent/25 text-xs font-medium hover:bg-accent/25 transition-all cursor-pointer">
+                          Microwave Design
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <div className="relative">
+                      <div className="px-3 py-1 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full border border-primary/30 text-xs font-bold hover:from-primary/30 hover:to-accent/30 transition-all cursor-pointer">
+                        Python
+                      </div>
+                      <div className="absolute -right-8 -bottom-6">
+                        <div className="px-2 py-1 bg-secondary/20 rounded-full border border-secondary/30 text-xs hover:bg-secondary/30 transition-all cursor-pointer">
+                          C++
+                        </div>
+                      </div>
+                      <div className="absolute -left-8 -bottom-6">
+                        <div className="px-2 py-1 bg-accent/20 rounded-full border border-accent/30 text-xs hover:bg-accent/30 transition-all cursor-pointer">
+                          MATLAB
+                        </div>
+                      </div>
+                      <div className="absolute top-6 left-2">
+                        <div className="px-2 py-1 bg-primary/15 rounded-full border border-primary/25 text-xs hover:bg-primary/25 transition-all cursor-pointer">
+                          Circuit Design
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Connecting lines */}
+                  <svg className="absolute inset-0 pointer-events-none opacity-30">
+                    <defs>
+                      <linearGradient id="line-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity="0.5"/>
+                        <stop offset="100%" stopColor="hsl(var(--accent))" stopOpacity="0.3"/>
+                      </linearGradient>
+                    </defs>
+                    <path d="M 60 50 Q 200 100 350 80" stroke="url(#line-gradient)" strokeWidth="1" fill="none"/>
+                    <path d="M 100 200 Q 200 150 300 160" stroke="url(#line-gradient)" strokeWidth="1" fill="none"/>
+                    <path d="M 150 120 Q 250 140 320 100" stroke="url(#line-gradient)" strokeWidth="1" fill="none"/>
+                  </svg>
+                </div>
               </div>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed mt-4">
                 Proficient in electromagnetic simulation using CST Studio Suite, custom antenna 
                 development, EIRP optimization, and microwave system design. Also comfortable 
                 with programming and mathematical modeling.
               </p>
             </Card>
 
-            <Card className="p-8 glass-card border-l-4 border-l-accent hover-float shadow-medium">
+            <Card className="p-8 glass-card border-0 hover-float shadow-medium bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-lg rounded-2xl">
               <h3 className="text-2xl font-bold mb-4 text-primary">14 Years of Building</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 From sustainable water-flow generators to wireless power transfer systems, 
@@ -94,7 +172,7 @@ export const About = () => {
               </p>
             </Card>
 
-            <Card className="p-8 glass-card border-l-4 border-l-secondary hover-float shadow-medium">
+            <Card className="p-8 glass-card border-0 hover-float shadow-medium bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-lg rounded-2xl">
               <h3 className="text-2xl font-bold mb-4 text-primary">The Bigger Picture</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Started a tech startup in digital microelectronics and RF engineering, working 
