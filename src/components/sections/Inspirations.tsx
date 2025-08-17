@@ -77,7 +77,7 @@ export const Inspirations = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold font-display mb-6 text-primary hover-lift">
-            People that inspired me and still inspire me in my work today
+            My Inspirations
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             These visionaries have shaped our world and continue to inspire innovation across the galaxy. 
