@@ -77,7 +77,7 @@ export const Inspirations = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold font-display mb-6 text-primary hover-lift">
-            Cosmic Inspirations
+            People that inspired me and still inspire me in my work today
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             These visionaries have shaped our world and continue to inspire innovation across the galaxy. 
@@ -130,8 +130,8 @@ export const Inspirations = () => {
                 );
               })}
             </CarouselContent>
-            <CarouselPrevious className="glass-button border-primary/30 text-primary hover:bg-primary hover:text-white -left-16" />
-            <CarouselNext className="glass-button border-primary/30 text-primary hover:bg-primary hover:text-white -right-16" />
+            <CarouselPrevious className="glass-button border-primary/30 text-primary hover:bg-primary hover:text-white -left-12" />
+            <CarouselNext className="glass-button border-primary/30 text-primary hover:bg-primary hover:text-white -right-12" />
           </Carousel>
         </div>
 
