@@ -108,38 +108,45 @@ export const Skills = () => {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <div className="relative h-48 overflow-hidden">
-                    <div className="absolute inset-0 flex flex-wrap items-center justify-center gap-4 p-4">
+                  <div className="relative h-56 overflow-hidden">
+                    <div className="absolute inset-0 flex flex-wrap items-center justify-center gap-6 p-6">
                       {category.skills.map((skill, skillIndex) => {
                         const sizeClasses = {
-                          small: "w-16 h-16 text-xs",
-                          medium: "w-20 h-20 text-sm", 
-                          large: "w-24 h-24 text-sm"
+                          small: "w-20 h-20 text-xs",
+                          medium: "w-24 h-24 text-sm", 
+                          large: "w-28 h-28 text-sm"
                         };
-                        const positions = [
-                          "animate-pulse hover:scale-110",
-                          "animate-pulse hover:scale-110 animation-delay-500",
-                          "animate-pulse hover:scale-110 animation-delay-1000",
-                          "animate-pulse hover:scale-110 animation-delay-1500"
+                        
+                        const skillColors = [
+                          'hsl(var(--skill-orange))',
+                          'hsl(var(--skill-blue))',
+                          'hsl(var(--skill-green))',
+                          'hsl(var(--skill-red))',
+                          'hsl(var(--skill-purple))',
+                          'hsl(var(--skill-cyan))',
+                          'hsl(var(--skill-yellow))',
+                          'hsl(var(--skill-pink))'
                         ];
+                        
+                        const currentColor = skillColors[skillIndex % skillColors.length];
+                        
                         return (
                           <div
                             key={skillIndex}
                             className={`
                               ${sizeClasses[skill.size as keyof typeof sizeClasses]}
-                              bg-gradient-to-br from-primary/30 to-accent/30 
-                              backdrop-blur-sm border border-primary/20
+                              border border-white/20
                               rounded-full flex items-center justify-center
-                              transition-all duration-500 cursor-pointer
-                              hover:from-primary/50 hover:to-accent/50
-                              hover:border-primary/40 hover:shadow-lg
-                              ${positions[skillIndex % positions.length]}
+                              transition-all duration-300 cursor-pointer
+                              hover:scale-110 hover:shadow-lg
+                              ${category.title === "Computer Engineering" ? 'm-3' : 'm-2'}
                             `}
                             style={{
-                              boxShadow: `0 0 20px ${skillIndex % 2 === 0 ? 'hsl(var(--primary))' : 'hsl(var(--accent))'}/20`
+                              backgroundColor: currentColor,
+                              color: '#000'
                             }}
                           >
-                            <span className="text-center font-medium leading-tight px-2">
+                            <span className="text-center font-semibold leading-tight px-3 break-words">
                               {skill.name}
                             </span>
                           </div>
