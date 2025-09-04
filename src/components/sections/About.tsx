@@ -15,10 +15,10 @@ export const About = () => {
             <Card className="p-8 glass-card border-0 hover-float shadow-medium bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-lg rounded-2xl">
               <h3 className="text-2xl font-bold mb-4 text-primary">The Science Fairs</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Started winning science fair medals in Grade 4 and never stopped. By high school, 
-                I became the first student from my school to compete internationally at Intel science 
-                fairs in New York and Los Angeles. Got to have dinner with Nobel laureates too, 
-                which was pretty surreal.
+                Got into science fairs early on in Grade 4 and kept participating through high school. 
+                Eventually had the opportunity to compete at Intel science fairs in New York and 
+                Los Angeles. The experience included meeting some Nobel laureates, which was 
+                quite memorable.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Those early wins shaped how I approach engineering problems - always asking "what if" 
