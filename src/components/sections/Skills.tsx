@@ -112,20 +112,20 @@ export const Skills = () => {
                     <div className="absolute inset-0 flex flex-wrap items-center justify-center gap-6 p-6">
                       {category.skills.map((skill, skillIndex) => {
                         const sizeClasses = {
-                          small: "w-20 h-20 text-xs",
-                          medium: "w-24 h-24 text-sm", 
-                          large: "w-28 h-28 text-sm"
+                          small: "w-24 h-24 text-xs",
+                          medium: "w-28 h-28 text-sm", 
+                          large: "w-32 h-32 text-sm"
                         };
                         
                         const skillColors = [
-                          'hsl(var(--skill-orange))',
-                          'hsl(var(--skill-blue))',
-                          'hsl(var(--skill-green))',
-                          'hsl(var(--skill-red))',
-                          'hsl(var(--skill-purple))',
-                          'hsl(var(--skill-cyan))',
-                          'hsl(var(--skill-yellow))',
-                          'hsl(var(--skill-pink))'
+                          'rgba(139, 92, 246, 0.2)', // purple/primary
+                          'rgba(168, 85, 247, 0.2)', // violet
+                          'rgba(147, 51, 234, 0.2)', // purple variant
+                          'rgba(126, 34, 206, 0.2)', // purple darker
+                          'rgba(124, 58, 237, 0.2)', // indigo-purple
+                          'rgba(109, 40, 217, 0.2)', // violet darker
+                          'rgba(155, 103, 240, 0.2)', // purple lighter
+                          'rgba(132, 204, 22, 0.2)'  // accent green for contrast
                         ];
                         
                         const currentColor = skillColors[skillIndex % skillColors.length];
@@ -135,15 +135,16 @@ export const Skills = () => {
                             key={skillIndex}
                             className={`
                               ${sizeClasses[skill.size as keyof typeof sizeClasses]}
-                              border border-white/20
+                              border border-white/30 backdrop-blur-sm
                               rounded-full flex items-center justify-center
                               transition-all duration-300 cursor-pointer
-                              hover:scale-110 hover:shadow-lg
+                              hover:scale-110 hover:shadow-lg hover:border-white/50
                               ${category.title === "Computer Engineering" ? 'm-3' : 'm-2'}
                             `}
                             style={{
                               backgroundColor: currentColor,
-                              color: '#000'
+                              color: 'hsl(var(--foreground))',
+                              backdropFilter: 'blur(8px)'
                             }}
                           >
                             <span className="text-center font-semibold leading-tight px-3 break-words">
