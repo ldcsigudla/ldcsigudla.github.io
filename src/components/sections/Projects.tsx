@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CalendarDays, Award, Zap, Recycle, Mountain, Factory, Waves, Radio, Antenna } from "lucide-react";
+import { CalendarDays, Award, Lightbulb, Recycle, Mountain, Factory, Waves, Radio, Antenna, Battery } from "lucide-react";
 
 const projects = [
   {
@@ -48,7 +48,7 @@ const projects = [
     title: "High-Efficiency Dynamo Design",
     description: "Lean engineering approach to develop low-cost, minimal energy loss electrical generator. Optimized magnetic flux density distribution and reduced mechanical friction losses for enhanced power generation efficiency.",
     technologies: ["Generator Design", "Magnetic Systems", "Mechanical Engineering", "Efficiency Optimization"],
-    icon: Zap,
+    icon: Battery,
     highlight: "Lean engineering for maximum efficiency"
   },
   {
@@ -56,7 +56,7 @@ const projects = [
     title: "Gravitational Force Energy Converter",
     description: "Novel gravitational energy harvesting system converting potential energy differentials into direct current. Innovative mechanical-to-electrical energy conversion using gravity-driven mechanical advantage systems.",
     technologies: ["Mechanical Systems", "Energy Conversion", "Gravitational Physics", "Power Generation"],
-    icon: Zap,
+    icon: Battery,
     highlight: "Gravity-driven electrical generation"
   },
   {
@@ -120,7 +120,7 @@ export const Projects = () => {
                   
                   <div className="mb-6">
                     <div className="flex items-center gap-2 mb-3">
-                      <Zap className="h-4 w-4 text-primary" />
+                      <Lightbulb className="h-4 w-4 text-primary" />
                       <span className="font-semibold text-sm">Key Innovation:</span>
                     </div>
                     <p className="text-sm text-primary font-medium bg-primary/10 p-3 rounded-lg">{project.highlight}</p>
