@@ -59,79 +59,76 @@ export const About = () => {
               <h3 className="text-2xl font-bold mb-4 text-primary">Technical Arsenal</h3>
               <div className="relative h-64 overflow-hidden rounded-lg">
                 <div className="absolute inset-0">
-                  {/* Main tech skills constellation */}
-                  <div className="absolute top-4 left-8">
-                    <div className="relative">
-                      <div className="px-4 py-2 bg-primary/20 rounded-full border border-primary/30 text-sm font-medium hover:bg-primary/30 transition-all cursor-pointer">
-                        RF Engineering
-                      </div>
-                      <div className="absolute -right-16 top-8">
-                        <div className="px-3 py-1 bg-accent/20 rounded-full border border-accent/30 text-xs font-medium hover:bg-accent/30 transition-all cursor-pointer">
-                          Antenna Design
-                        </div>
-                      </div>
+                  {/* Main tech skills constellation - repositioned for clarity */}
+                  <div className="absolute top-6 left-6">
+                    <div className="px-4 py-2 bg-primary/20 rounded-full border border-primary/30 text-sm font-medium hover:bg-primary/30 transition-all cursor-pointer">
+                      RF Engineering
                     </div>
                   </div>
 
-                  <div className="absolute top-12 right-12">
-                    <div className="relative">
-                      <div className="px-4 py-2 bg-secondary/20 rounded-full border border-secondary/30 text-sm font-medium hover:bg-secondary/30 transition-all cursor-pointer">
-                        Power Systems
-                      </div>
-                      <div className="absolute -left-20 top-8">
-                        <div className="px-3 py-1 bg-primary/15 rounded-full border border-primary/25 text-xs font-medium hover:bg-primary/25 transition-all cursor-pointer">
-                          Electromagnetics
-                        </div>
-                      </div>
+                  <div className="absolute top-6 right-6">
+                    <div className="px-4 py-2 bg-secondary/20 rounded-full border border-secondary/30 text-sm font-medium hover:bg-secondary/30 transition-all cursor-pointer">
+                      Power Systems
                     </div>
                   </div>
 
-                  <div className="absolute bottom-20 left-4">
-                    <div className="relative">
-                      <div className="px-4 py-2 bg-accent/20 rounded-full border border-accent/30 text-sm font-medium hover:bg-accent/30 transition-all cursor-pointer">
-                        Digital Electronics
-                      </div>
-                      <div className="absolute -right-12 -top-6">
-                        <div className="px-3 py-1 bg-secondary/15 rounded-full border border-secondary/25 text-xs font-medium hover:bg-secondary/25 transition-all cursor-pointer">
-                          Energy Conversion
-                        </div>
-                      </div>
+                  <div className="absolute top-20 left-1/2 transform -translate-x-1/2">
+                    <div className="px-3 py-1 bg-accent/20 rounded-full border border-accent/30 text-xs font-medium hover:bg-accent/30 transition-all cursor-pointer">
+                      Antenna Design
                     </div>
                   </div>
 
-                  <div className="absolute bottom-8 right-8">
-                    <div className="relative">
-                      <div className="px-4 py-2 bg-primary/25 rounded-full border border-primary/35 text-sm font-medium hover:bg-primary/35 transition-all cursor-pointer">
-                        CST Studio Suite
-                      </div>
-                      <div className="absolute -left-16 -top-8">
-                        <div className="px-3 py-1 bg-accent/15 rounded-full border border-accent/25 text-xs font-medium hover:bg-accent/25 transition-all cursor-pointer">
-                          Microwave Design
-                        </div>
-                      </div>
+                  <div className="absolute top-1/2 left-4 transform -translate-y-1/2">
+                    <div className="px-4 py-2 bg-accent/20 rounded-full border border-accent/30 text-sm font-medium hover:bg-accent/30 transition-all cursor-pointer">
+                      Digital Electronics
+                    </div>
+                  </div>
+
+                  <div className="absolute top-1/2 right-4 transform -translate-y-1/2">
+                    <div className="px-4 py-2 bg-primary/25 rounded-full border border-primary/35 text-sm font-medium hover:bg-primary/35 transition-all cursor-pointer">
+                      CST Studio Suite
                     </div>
                   </div>
 
                   <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    <div className="relative">
-                      <div className="px-3 py-1 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full border border-primary/30 text-xs font-bold hover:from-primary/30 hover:to-accent/30 transition-all cursor-pointer">
-                        Python
-                      </div>
-                      <div className="absolute -right-8 -bottom-6">
-                        <div className="px-2 py-1 bg-secondary/20 rounded-full border border-secondary/30 text-xs hover:bg-secondary/30 transition-all cursor-pointer">
-                          C++
-                        </div>
-                      </div>
-                      <div className="absolute -left-8 -bottom-6">
-                        <div className="px-2 py-1 bg-accent/20 rounded-full border border-accent/30 text-xs hover:bg-accent/30 transition-all cursor-pointer">
-                          MATLAB
-                        </div>
-                      </div>
-                      <div className="absolute top-6 left-2">
-                        <div className="px-2 py-1 bg-primary/15 rounded-full border border-primary/25 text-xs hover:bg-primary/25 transition-all cursor-pointer">
-                          Circuit Design
-                        </div>
-                      </div>
+                    <div className="px-3 py-1 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full border border-primary/30 text-xs font-bold hover:from-primary/30 hover:to-accent/30 transition-all cursor-pointer">
+                      Python
+                    </div>
+                  </div>
+
+                  <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2">
+                    <div className="px-3 py-1 bg-primary/15 rounded-full border border-primary/25 text-xs font-medium hover:bg-primary/25 transition-all cursor-pointer">
+                      Electromagnetics
+                    </div>
+                  </div>
+
+                  <div className="absolute bottom-6 left-6">
+                    <div className="px-3 py-1 bg-secondary/15 rounded-full border border-secondary/25 text-xs font-medium hover:bg-secondary/25 transition-all cursor-pointer">
+                      Energy Conversion
+                    </div>
+                  </div>
+
+                  <div className="absolute bottom-6 right-6">
+                    <div className="px-3 py-1 bg-accent/15 rounded-full border border-accent/25 text-xs font-medium hover:bg-accent/25 transition-all cursor-pointer">
+                      Microwave Design
+                    </div>
+                  </div>
+
+                  <div className="absolute bottom-12 left-1/4">
+                    <div className="px-2 py-1 bg-secondary/20 rounded-full border border-secondary/30 text-xs hover:bg-secondary/30 transition-all cursor-pointer">
+                      C++
+                    </div>
+                  </div>
+
+                  <div className="absolute bottom-12 right-1/4">
+                    <div className="px-2 py-1 bg-accent/20 rounded-full border border-accent/30 text-xs hover:bg-accent/30 transition-all cursor-pointer">
+                      MATLAB
+                    </div>
+                  </div>
+
+                  <div className="absolute top-1/3 left-1/4">
+                    <div className="px-2 py-1 bg-primary/15 rounded-full border border-primary/25 text-xs hover:bg-primary/25 transition-all cursor-pointer">
+                      Circuit Design
                     </div>
                   </div>
 
@@ -143,9 +140,11 @@ export const About = () => {
                         <stop offset="100%" stopColor="hsl(var(--accent))" stopOpacity="0.3" />
                       </linearGradient>
                     </defs>
-                    <path d="M 60 50 Q 200 100 350 80" stroke="url(#line-gradient)" strokeWidth="1" fill="none" />
-                    <path d="M 100 200 Q 200 150 300 160" stroke="url(#line-gradient)" strokeWidth="1" fill="none" />
-                    <path d="M 150 120 Q 250 140 320 100" stroke="url(#line-gradient)" strokeWidth="1" fill="none" />
+                    <path d="M 80 30 Q 200 80 320 30" stroke="url(#line-gradient)" strokeWidth="1" fill="none" />
+                    <path d="M 40 130 Q 200 100 360 130" stroke="url(#line-gradient)" strokeWidth="1" fill="none" />
+                    <path d="M 200 50 Q 200 130 200 210" stroke="url(#line-gradient)" strokeWidth="1" fill="none" />
+                    <path d="M 120 80 Q 200 130 280 180" stroke="url(#line-gradient)" strokeWidth="1" fill="none" />
+                    <path d="M 280 80 Q 200 130 120 180" stroke="url(#line-gradient)" strokeWidth="1" fill="none" />
                   </svg>
                 </div>
               </div>
