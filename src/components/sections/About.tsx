@@ -5,7 +5,7 @@ export const About = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
         <h2 className="text-4xl md:text-6xl font-bold font-display mb-6 text-primary hover-lift">
-          Building Things Since 2009
+          My Journey Since 2009
         </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">Electrical, electronic, and computer engineering, energy systems and RF design</p>
         </div>
@@ -21,8 +21,8 @@ export const About = () => {
                 quite memorable.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Those early wins shaped how I approach engineering problems - always asking "what if" 
-                and building prototypes to find out.
+                This experience taught me to approach engineering problems by asking "what if" 
+                and building prototypes to test ideas.
               </p>
             </Card>
 
@@ -157,7 +157,7 @@ export const About = () => {
             </Card>
 
             <Card className="p-8 glass-card border-0 hover-float shadow-medium bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-lg rounded-2xl">
-              <h3 className="text-2xl font-bold mb-4 text-primary">14 Years of Building</h3>
+              <h3 className="text-2xl font-bold mb-4 text-primary">Project Experience</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 From sustainable water-flow generators to wireless power transfer systems, 
                 I've been building energy solutions since 2009. Projects include gravitational 

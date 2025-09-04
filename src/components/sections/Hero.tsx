@@ -15,9 +15,7 @@ export const Hero = () => {
         <h1 className="mt-3 text-5xl md:text-7xl font-bold font-display text-white mb-6 hover-lift drop-shadow-lg">
           Lungelo Sigudla
         </h1>
-        <p className="text-lg max-w-2xl mx-auto mb-12 leading-relaxed md:text-xl text-white/90 drop-shadow-md">Building energy systems and RF solutions since 2009.     
-
-From science fairs to startup founder.</p>
+        <p className="text-lg max-w-2xl mx-auto mb-12 leading-relaxed md:text-xl text-white/90 drop-shadow-md">Working on energy systems and RF solutions since 2009. Passionate about sustainable technology and innovation.</p>
 
         <div className="mt-8 flex items-center justify-center gap-4 flex-wrap">
           <a href="#contact" aria-label="Contact">

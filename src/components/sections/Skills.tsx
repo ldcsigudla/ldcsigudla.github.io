@@ -71,11 +71,11 @@ const certifications = [
 ];
 
 const achievements = [
-  "14+ consecutive years of Gold/Silver medals in science fairs",
-  "First student to win international Intel science fair competitions",
-  "Published research in wireless power transfer optimization", 
-  "Collaborated with Nobel laureates in physics and chemistry",
-  "Pioneered novel antenna design methodologies"
+  "Participated in science fairs for over 14 years, earning various medals",
+  "Competed in international Intel science fair competitions",
+  "Conducted research in wireless power transfer optimization", 
+  "Had opportunities to meet Nobel laureates in physics and chemistry",
+  "Developed custom antenna design approaches"
 ];
 
 export const Skills = () => {

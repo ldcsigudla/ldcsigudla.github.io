@@ -86,7 +86,7 @@ export const Projects = () => {
             Engineering Innovation Portfolio
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            14+ years of award-winning research and development in electrical, electronic, and energy engineering
+            Research and development projects in electrical, electronic, and energy engineering over the years
           </p>
         </div>
 
@@ -107,7 +107,7 @@ export const Projects = () => {
                           <CalendarDays className="h-4 w-4" />
                           {project.year}
                           <Award className="h-4 w-4 ml-2 text-accent" />
-                          Award Winner
+                          Research Project
                         </div>
                       </div>
                     </div>
