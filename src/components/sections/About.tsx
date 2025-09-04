@@ -7,9 +7,7 @@ export const About = () => {
         <h2 className="text-4xl md:text-6xl font-bold font-display mb-6 text-primary hover-lift">
           Building Things Since 2009
         </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Electrical, electronic, and computer engineering specialist with a passion for energy systems and RF design
-          </p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">Electrical, electronic, and computer engineering, energy systems and RF design</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -141,13 +139,13 @@ export const About = () => {
                   <svg className="absolute inset-0 pointer-events-none opacity-30">
                     <defs>
                       <linearGradient id="line-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity="0.5"/>
-                        <stop offset="100%" stopColor="hsl(var(--accent))" stopOpacity="0.3"/>
+                        <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity="0.5" />
+                        <stop offset="100%" stopColor="hsl(var(--accent))" stopOpacity="0.3" />
                       </linearGradient>
                     </defs>
-                    <path d="M 60 50 Q 200 100 350 80" stroke="url(#line-gradient)" strokeWidth="1" fill="none"/>
-                    <path d="M 100 200 Q 200 150 300 160" stroke="url(#line-gradient)" strokeWidth="1" fill="none"/>
-                    <path d="M 150 120 Q 250 140 320 100" stroke="url(#line-gradient)" strokeWidth="1" fill="none"/>
+                    <path d="M 60 50 Q 200 100 350 80" stroke="url(#line-gradient)" strokeWidth="1" fill="none" />
+                    <path d="M 100 200 Q 200 150 300 160" stroke="url(#line-gradient)" strokeWidth="1" fill="none" />
+                    <path d="M 150 120 Q 250 140 320 100" stroke="url(#line-gradient)" strokeWidth="1" fill="none" />
                   </svg>
                 </div>
               </div>
