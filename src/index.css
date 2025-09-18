@@ -8,33 +8,33 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 248 100% 99%;
-    --foreground: 224 15% 10%;
+    --background: 0 0% 100%;
+    --foreground: 222 84% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 224 15% 10%;
+    --card-foreground: 222 84% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 224 15% 10%;
+    --popover-foreground: 222 84% 10%;
 
-    --primary: 262 90% 50%;
+    --primary: 222 84% 15%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 15% 95%;
-    --secondary-foreground: 224 15% 10%;
+    --secondary: 210 11% 96%;
+    --secondary-foreground: 222 84% 15%;
 
-    --muted: 220 15% 95%;
-    --muted-foreground: 220 10% 45%;
+    --muted: 210 11% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 142 76% 36%;
+    --accent: 183 100% 32%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 262 90% 50%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 222 84% 15%;
 
     --radius: 0.75rem;
 
@@ -47,61 +47,57 @@ All colors MUST be HSL.
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    /* Beautiful design tokens */
-    --brand: 262 90% 50%;
-    --brand-secondary: 142 76% 36%;
-    --brand-tertiary: 32 95% 55%;
-    --brand-gradient: linear-gradient(135deg, hsl(262 90% 50%), hsl(142 76% 36%), hsl(32 95% 55%));
+    /* Professional design tokens */
+    --brand: 222 84% 15%;
+    --brand-secondary: 183 100% 32%;
+    --brand-tertiary: 215 16% 47%;
+    --brand-gradient: linear-gradient(135deg, hsl(222 84% 15%), hsl(183 100% 32%));
     
-    /* Skill bubble colors - flat distinct colors */
-    --skill-orange: 24 95% 75%;
-    --skill-red: 0 85% 75%;
-    --skill-blue: 210 90% 75%;
-    --skill-green: 120 60% 75%;
-    --skill-purple: 280 70% 75%;
-    --skill-yellow: 48 95% 75%;
-    --skill-pink: 320 80% 75%;
-    --skill-cyan: 180 70% 75%;
-    --gradient-hero: linear-gradient(135deg, hsl(262 90% 50% / 0.1), hsl(142 76% 36% / 0.1));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100% / 0.9), hsl(262 90% 50% / 0.05));
-    --gradient-button: linear-gradient(135deg, hsl(262 90% 50%), hsl(262 90% 45%));
-    --gradient-accent: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 40%));
-    --shadow-soft: 0 4px 12px -2px hsl(262 90% 50% / 0.1);
-    --shadow-medium: 0 8px 25px -5px hsl(262 90% 50% / 0.15);
-    --shadow-large: 0 20px 40px -10px hsl(262 90% 50% / 0.2);
-    --shadow-glow: 0 0 20px hsl(262 90% 50% / 0.3);
+    /* Clean professional colors */
+    --professional-navy: 222 84% 15%;
+    --professional-teal: 183 100% 32%;
+    --professional-gray: 215 16% 47%;
+    --professional-light-gray: 210 11% 96%;
+    --gradient-hero: linear-gradient(135deg, hsl(222 84% 15% / 0.05), hsl(183 100% 32% / 0.05));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100% / 0.95), hsl(222 84% 15% / 0.02));
+    --gradient-button: linear-gradient(135deg, hsl(222 84% 15%), hsl(222 84% 20%));
+    --gradient-accent: linear-gradient(135deg, hsl(183 100% 32%), hsl(183 100% 35%));
+    --shadow-soft: 0 4px 12px -2px hsl(222 84% 15% / 0.08);
+    --shadow-medium: 0 8px 25px -5px hsl(222 84% 15% / 0.12);
+    --shadow-large: 0 20px 40px -10px hsl(222 84% 15% / 0.15);
+    --shadow-glow: 0 0 20px hsl(183 100% 32% / 0.2);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-spring: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
 
   .dark {
-    --background: 224 15% 8%;
-    --foreground: 248 100% 95%;
+    --background: 222 84% 6%;
+    --foreground: 0 0% 98%;
 
-    --card: 224 15% 10%;
-    --card-foreground: 248 100% 95%;
+    --card: 222 84% 8%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 224 15% 10%;
-    --popover-foreground: 248 100% 95%;
+    --popover: 222 84% 8%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 262 90% 60%;
+    --primary: 222 84% 20%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 224 15% 15%;
-    --secondary-foreground: 248 100% 95%;
+    --secondary: 222 84% 12%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 224 15% 15%;
-    --muted-foreground: 220 8% 60%;
+    --muted: 222 84% 12%;
+    --muted-foreground: 215 16% 65%;
 
-    --accent: 142 76% 45%;
+    --accent: 183 100% 40%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 224 15% 18%;
-    --input: 224 15% 18%;
-    --ring: 262 90% 60%;
+    --border: 222 84% 15%;
+    --input: 222 84% 15%;
+    --ring: 222 84% 20%;
 
     --sidebar-background: 224 15% 8%;
     --sidebar-foreground: 248 100% 95%;
@@ -113,23 +109,13 @@ All colors MUST be HSL.
     --sidebar-ring: 262 90% 60%;
 
     /* Dark mode design tokens */
-    --brand-gradient: linear-gradient(135deg, hsl(262 90% 60%), hsl(142 76% 45%), hsl(32 95% 65%));
-    --gradient-hero: linear-gradient(135deg, hsl(262 90% 60% / 0.15), hsl(142 76% 45% / 0.15));
-    
-    /* Dark mode skill bubble colors - slightly darker for contrast */
-    --skill-orange: 24 90% 65%;
-    --skill-red: 0 80% 65%;
-    --skill-blue: 210 85% 65%;
-    --skill-green: 120 55% 65%;
-    --skill-purple: 280 65% 65%;
-    --skill-yellow: 48 90% 65%;
-    --skill-pink: 320 75% 65%;
-    --skill-cyan: 180 65% 65%;
-    --gradient-card: linear-gradient(145deg, hsl(224 15% 10% / 0.9), hsl(262 90% 60% / 0.1));
-    --shadow-soft: 0 4px 12px -2px hsl(262 90% 60% / 0.2);
-    --shadow-medium: 0 8px 25px -5px hsl(262 90% 60% / 0.25);
-    --shadow-large: 0 20px 40px -10px hsl(262 90% 60% / 0.3);
-    --shadow-glow: 0 0 30px hsl(262 90% 60% / 0.4);
+    --brand-gradient: linear-gradient(135deg, hsl(222 84% 25%), hsl(183 100% 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(222 84% 25% / 0.1), hsl(183 100% 45% / 0.1));
+    --gradient-card: linear-gradient(145deg, hsl(222 84% 8% / 0.95), hsl(222 84% 15% / 0.1));
+    --shadow-soft: 0 4px 12px -2px hsl(222 84% 15% / 0.3);
+    --shadow-medium: 0 8px 25px -5px hsl(222 84% 15% / 0.4);
+    --shadow-large: 0 20px 40px -10px hsl(222 84% 15% / 0.5);
+    --shadow-glow: 0 0 30px hsl(183 100% 40% / 0.3);
   }
 }
 

@@ -29,34 +29,33 @@ const Index = () => {
       <Projects />
       <Inspirations />
       
-      <section id="contact" className="py-20 bg-brand-gradient">
+      <section id="contact" className="py-24 bg-primary">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-6xl font-bold font-display mb-8 text-white hover-lift">Want to Chat?</h2>
-          <p className="text-lg text-white/90 max-w-3xl mx-auto mb-12 leading-relaxed">
-            Always up for discussing engineering projects, startup ideas, or just geeking out about RF systems. 
-            Drop me a line if you're working on something interesting.
-          </p>
-          <div className="flex justify-center gap-6 flex-wrap">
-            <a 
-              href="mailto:sigudlalungelo@gmail.com" 
-              className="inline-flex items-center gap-3 glass-button text-white px-10 py-5 rounded-xl hover-glow hover-lift shadow-large font-semibold transition-spring"
-            >
-              <Mail className="w-5 h-5" />
-              Email Me
-            </a>
-            <a 
-              href="https://www.linkedin.com/in/lungelosigudla/" 
-              target="_blank" 
-              rel="noreferrer"
-              className="inline-flex items-center gap-3 bg-white/20 text-white px-10 py-5 rounded-xl hover:bg-white/30 transition-spring hover-lift shadow-large font-semibold backdrop-blur-sm"
-            >
-              <Linkedin className="w-5 h-5" />
-              LinkedIn
-            </a>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-primary-foreground">Let's Connect and Build Something Great</h2>
+            <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto mb-12 leading-relaxed">
+              Open to engineering roles, research collaborations, and consulting opportunities. 
+              Always excited to discuss innovative projects and breakthrough technologies.
+            </p>
+            <div className="flex justify-center gap-8 flex-wrap">
+              <a 
+                href="mailto:sigudlalungelo@gmail.com" 
+                className="inline-flex items-center gap-3 bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-medium hover:shadow-large"
+              >
+                <Mail className="w-5 h-5" />
+                Email Me
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/lungelosigudla/" 
+                target="_blank" 
+                rel="noreferrer"
+                className="inline-flex items-center gap-3 bg-primary-foreground/20 hover:bg-primary-foreground/30 text-primary-foreground px-8 py-4 rounded-lg font-semibold transition-all duration-300 backdrop-blur-sm border border-primary-foreground/20"
+              >
+                <Linkedin className="w-5 h-5" />
+                LinkedIn
+              </a>
+            </div>
           </div>
-          <p className="text-sm text-white/70 mt-8 font-medium">
-            Currently open to engineering roles, consulting opportunities, and research collaborations
-          </p>
         </div>
       </section>
     </main>
