@@ -6,7 +6,7 @@ export const Hero = () => {
       <div className="absolute inset-0 -z-10 bg-center bg-cover" style={{
       backgroundImage: `url(${heroImage})`
     }} aria-hidden />
-      <div className="absolute inset-0 -z-10 bg-gradient-hero bg-animate" aria-hidden />
+      <div className="absolute inset-0 -z-10 bg-gradient-hero" aria-hidden />
 
       <div className="container mx-auto px-6 py-24 md:py-32 text-center">
         <p className="text-sm uppercase tracking-widest text-white/80 mb-4 hover-float drop-shadow-md">

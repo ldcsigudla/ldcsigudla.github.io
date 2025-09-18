@@ -79,7 +79,7 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <section id="projects" className="py-20 bg-gradient-hero bg-animate">
+    <section id="projects" className="py-20 bg-gradient-hero">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold font-display mb-6 text-gradient hover-lift">

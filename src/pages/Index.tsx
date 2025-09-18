@@ -29,7 +29,7 @@ const Index = () => {
       <Projects />
       <Inspirations />
       
-      <section id="contact" className="py-20 bg-brand-gradient bg-animate">
+      <section id="contact" className="py-20 bg-brand-gradient">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-6xl font-bold font-display mb-8 text-white hover-lift">Want to Chat?</h2>
           <p className="text-lg text-white/90 max-w-3xl mx-auto mb-12 leading-relaxed">

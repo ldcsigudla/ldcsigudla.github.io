@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 export const About = () => {
-  return <section id="about" className="py-20 bg-gradient-hero bg-animate">
+  return <section id="about" className="py-20 bg-gradient-hero">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
         <h2 className="text-4xl md:text-6xl font-bold font-display mb-6 text-primary hover-lift">

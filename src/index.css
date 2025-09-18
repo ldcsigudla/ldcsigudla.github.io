@@ -206,18 +206,6 @@ All colors MUST be HSL.
     @apply transition-spring hover:scale-[1.02] hover:-translate-y-0.5;
   }
 
-  /* Animated backgrounds */
-  .bg-animate {
-    background-size: 200% 200%;
-    animation: gradient-shift 6s ease infinite;
-  }
-
-  @keyframes gradient-shift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-
   /* Text effects */
   .text-gradient {
     background: var(--brand-gradient);
